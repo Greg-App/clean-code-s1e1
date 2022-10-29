@@ -26,16 +26,15 @@ body {
     width: 500px;
     margin: 0 auto 0;
 }
-.todo-list__add-item__title {
+.todo-list-add-section__title {
     margin-bottom:20px;
 }
-.todo-list__add-item__input,
-.task {
+.todo-list-section__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
-.todo-list__add-item__box {
+.todo-list-section__input-box {
     display: flex;
 }
 ul {
