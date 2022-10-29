@@ -21,7 +21,9 @@ var createNewTaskElement=function(taskString){
     listItem.classList.add('todo-list-section__list-item');
 
     //input (checkbox)
-    var checkBox=document.createElement("input");//checkbx
+    var checkBox=document.createElement("input");
+    checkBox.classList.add('todo-list-section__list-item-checkbox');
+    //checkbx
     //label
     var label=document.createElement("label");//label
     //input (text)
