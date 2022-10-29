@@ -101,13 +101,12 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-    vertical-align: middle;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-li > * { /*!!! Delete*/
-    
+li > * {
+    vertical-align: middle;
 }
 
 li > input[type="checkbox"] {
@@ -122,12 +121,12 @@ li > label {
 li >    input[type="text"] {
     width: 226px;
 }
-button.todo-list-section__list-item-delete-btn img {
+.todo-list-section__btn-delete-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.todo-list-section__list-item-delete-btn img:hover {
+.todo-list-section__btn-delete-img:hover {
     transform: rotateZ(0);
 }
 
