@@ -18,6 +18,7 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList.add('todo-list-section__list-item');
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
