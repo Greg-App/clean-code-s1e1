@@ -38,14 +38,14 @@
 }
 
 .todo-list-section__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .todo-list-section__input,
 .todo-list-section__list-item-checkbox,
 .todo-list-section__btn {
-  outline:none;
+  outline: none;
 }
 
 .todo-list-section__btn {
@@ -72,7 +72,7 @@
 }
 
 .todo-list-add-section__title {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .todo-list-section__add-input {
@@ -104,7 +104,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style:none;
+  list-style: none;
 }
 
 .todo-list-section__list-item > * {
@@ -147,24 +147,24 @@ but it works well, good to read and i didn't find that its not allowed. We also 
 
 /* Edit Task */
 .todo-list-section__list-item-input {
-  display:none;
+  display: none;
 }
 
 .todo-list-section__list-item_edit-mode    
 .todo-list-section__input {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .todo-list-section__list-item_edit-mode    
 .todo-list-section__label {
-  display:none;
+  display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   
   .page-header {
     text-align: center;
   }
-  
+
 }
