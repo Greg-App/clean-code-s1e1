@@ -42,10 +42,10 @@
     padding: 0px;
 }
 
-input,button{
+.todo-list-section__input,.todo-list-section__list-item-checkbox,.todo-list-section__btn{
     outline:none;
 }
-button {
+.todo-list-section__btn {
     background: none;
     border: 0px;
     color: #888;
@@ -54,7 +54,7 @@ button {
     font-family: "Lato", sans-serif;
     cursor: pointer;
 }
-button:hover {
+.todo-list-section__btn:hover {
     color: #3a3A3a;
 }
 /* Heading */
@@ -73,7 +73,7 @@ button:hover {
 .todo-list-section__add-input {
     width: 318px;
 }
-input[type="text"] {
+.todo-list-section__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -85,7 +85,7 @@ input[type="text"] {
     font-family: "Lato", sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.todo-list-section__input:focus {
     color: #333;
 }
 
@@ -94,7 +94,7 @@ input[type="text"]:focus {
 
 /* Task list */
 
-li {
+.todo-list-section__list-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -103,20 +103,20 @@ li {
     align-items: center;
     list-style:none;
 }
-li > * {
+.todo-list-section__list-item > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo-list-section__list-item-checkbox {
     margin: 0 10px;
 }
-li > label {
+.todo-list-section__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.todo-list-section__list-item-input {
     width: 226px;
 }
 .todo-list-section__btn-delete-img {
@@ -129,21 +129,23 @@ li >    input[type="text"] {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.todo-list-section-completed .todo-list-section__label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.todo-list-section__list-item-input {
     display:none;
 }
 
-ul li.todo-list-section__list-item_edit-mode input[type="text"] {
+.todo-list-section__list-item_edit-mode    
+.todo-list-section__input {
     display:inline-block;
     width:224px;
 }
 
-ul li.todo-list-section__list-item_edit-mode label {
+.todo-list-section__list-item_edit-mode    
+.todo-list-section__label {
     display:none;
 }
