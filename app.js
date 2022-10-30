@@ -31,9 +31,10 @@ var createNewTaskElement=function(taskString){
     label.classList.add('todo-list-section__list-item-label');
 
     var editInput=document.createElement("input");
+    editInput.type="text";
     editInput.classList.add('todo-list-section__input');
     editInput.classList.add('todo-list-section__list-item-input');
-    editInput.type="text";
+    
 
     var editButton=document.createElement("button");//edit button
     editButton.classList.add('todo-list-section__btn');

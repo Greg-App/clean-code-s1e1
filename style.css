@@ -41,9 +41,7 @@
     margin:0;
     padding: 0px;
 }
-li {
-    list-style:none;
-}
+
 input,button{
     outline:none;
 }
@@ -95,6 +93,7 @@ input[type="text"]:focus {
 
 
 /* Task list */
+
 li {
     overflow: hidden;
     padding: 20px 0;
@@ -102,6 +101,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style:none;
 }
 li > * {
     vertical-align: middle;
