@@ -27,7 +27,9 @@
     margin: 0 auto 0;
 }
 
-.todo-list-section__input {
+.todo-list-section__input,
+.todo-list-section__label
+{
     width: 56%;
     display: inline-block;
     flex-grow: 1;
