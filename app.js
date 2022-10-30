@@ -20,37 +20,33 @@ var createNewTaskElement=function(taskString){
     var listItem=document.createElement("li");
     listItem.classList.add('todo-list-section__list-item');
 
-    //input (checkbox)
     var checkBox=document.createElement("input");
+    
     checkBox.classList.add('todo-list-section__list-item-checkbox');
-    //checkbx
-    //label
-    var label=document.createElement("label");//label
-    //input (text)
-    var editInput=document.createElement("input");//text
-    //button.edit
-    var editButton=document.createElement("button");//edit button
-
-    //button.delete
-    var deleteButton=document.createElement("button");//delete button
-    var deleteButtonImg=document.createElement("img");//delete button image
-    deleteButtonImg.classList.add('todo-list-section__btn-delete-img');
-
-    label.innerText=taskString;
-    label.className='todo-list-section__input';
-
-    //Each elements, needs appending
     checkBox.type="checkbox";
+
+    var label=document.createElement("label");
+    label.innerText=taskString;
+    label.classList.add('todo-list-section__label');
+    label.classList.add('todo-list-section__list-item-label');
+
+    var editInput=document.createElement("input");
+    editInput.classList.add('todo-list-section__input');
+    editInput.classList.add('todo-list-section__list-item-input');
     editInput.type="text";
-    editInput.className="todo-list-section__input";
 
+    var editButton=document.createElement("button");//edit button
+    editButton.classList.add('todo-list-section__btn');
+    editButton.classList.add('todo-list-section__list-item-edit-btn');
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="todo-list-section__list-item-edit-btn";
 
-    deleteButton.className="todo-list-section__list-item-delete-btn";
+    var deleteButton=document.createElement("button");
+    deleteButton.classList.add('todo-list-section__btn');
+    deleteButton.classList.add('todo-list-section__list-item-delete-btn');
+    var deleteButtonImg=document.createElement("img");
+    deleteButtonImg.classList.add('todo-list-section__btn-delete-img');
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.alt='remove';
-
     deleteButton.appendChild(deleteButtonImg);
 
 
