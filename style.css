@@ -17,10 +17,7 @@
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.page-header { text-align: center;
-}
-}
+
 .todo-list {
     display: block;
     width: 500px;
@@ -149,3 +146,8 @@
 .todo-list-section__label {
     display:none;
 }
+
+@media (max-width:768px) {
+    .page-header { text-align: center;
+    }
+    }
