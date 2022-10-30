@@ -4,19 +4,21 @@
     color: #333;
     font-family: "Lato", sans-serif;
 }
+
 .page-header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
+
 .page-header__logo {
     width: 100%;
 }
+
 .page-header__more-info {
     font-family: fantasy, cursive;
 }
-
 
 .todo-list {
     display: block;
@@ -25,23 +27,27 @@
 }
 
 .todo-list-section__input,
-.todo-list-section__label
-{
+.todo-list-section__label {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
+
 .todo-list-section__input-box {
     display: flex;
 }
+
 .todo-list-section__list {
     margin:0;
     padding: 0px;
 }
 
-.todo-list-section__input,.todo-list-section__list-item-checkbox,.todo-list-section__btn{
+.todo-list-section__input,
+.todo-list-section__list-item-checkbox,
+.todo-list-section__btn {
     outline:none;
 }
+
 .todo-list-section__btn {
     background: none;
     border: 0px;
@@ -64,12 +70,15 @@
     margin: 0;
     text-transform: uppercase;
 }
+
 .todo-list-add-section__title {
     margin-bottom:20px;
 }
+
 .todo-list-section__add-input {
     width: 318px;
 }
+
 .todo-list-section__input {
     margin: 0;
     font-size: 18px;
@@ -82,15 +91,12 @@
     font-family: "Lato", sans-serif;
     color: #888;
 }
+
 .todo-list-section__input:focus {
     color: #333;
 }
 
-/* New Task */ 
-
-
 /* Task list */
-
 .todo-list-section__list-item {
     overflow: hidden;
     padding: 20px 0;
@@ -100,6 +106,7 @@
     align-items: center;
     list-style:none;
 }
+
 .todo-list-section__list-item > * {
     vertical-align: middle;
 }
@@ -126,7 +133,10 @@
 }
 
 /* Completed */
-.todo-list-section-completed .todo-list-section__label {
+/*Greg-App: the combined selector below its like the rule 3.8. Yes, this is not selector grouping, 
+but it works well, good to read and i didn't find that its not allowed. We also can pretend its like HTML line wrapping rule 2.5*/
+.todo-list-section-completed    
+.todo-list-section__label {
     text-decoration: line-through;
     color: #888;
 }
@@ -148,6 +158,7 @@
 }
 
 @media (max-width:768px) {
-    .page-header { text-align: center;
+    .page-header {
+        text-align: center;
     }
-    }
+}
